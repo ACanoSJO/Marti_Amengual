@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+:root{
+    --prim-color: hsl(220, 50%, 30%);
+    --secon-color: hsl(220, 50%, 40%);
+    --third-color: hsl(230, 20%, 97%);
+}
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+/* -------------PORTADA--------------- */
+
+/* -------------HEADER---------------- */
+header{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+}
+
+/* -------------NAVBAR---------------- */
+#navbar{
+    width: 13vw;
+    background-color: hsl(218, 52%, 31%);
+    height: 100vh;
+    position: sticky;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+}
+
+a.enlaces{
+    color: white;
+    padding: 18px;
+    margin-top: 3px;
+    background-color: var(--secon-color);
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.25s;
+    -webkit-transition: background-color 0.25s;
+    -moz-transition: background-color 0.25s;
+    -ms-transition: background-color 0.25s;
+    -o-transition: background-color 0.25s;
+}
+
+a.enlaces:hover{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+.enlaces:visited{
+    color: white;
+}
+
+/* -----------CONTENIDO--------------- */
+#cuerpo{
+    display: flex;
+}
+
+#contenido{
+    width: 87vw;
+    background-color: var(--third-color);
+}
+
+#contenido > div > h2{
+    color:orange;
+    font-size: 2em;
+}
+
+#contenido > div > h3{
+    padding-bottom: 1em;
+}
+
+#contenido > div > p{
+    padding-bottom: 1em;
+}
+
+#contenido > div{
+    margin: 2em;
+}
+
+/* -------------TABLAS---------------- */
+#tablas1{
+    display: flex;
+    margin-top: 2em;
+}
+
+#empresas_2{
+    margin-left: 30vh;
+}
+
+.empresas > p{
+    padding-bottom: 3em;
+}
