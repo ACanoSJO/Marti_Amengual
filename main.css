@@ -16,24 +16,23 @@
 header{
     height: 20vh;
     display: flex;
+    align-content: center;
     justify-content: space-between;
-    padding-right: 7vw;
-    padding-left: 7vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+#horario{
+    display: flex;
+    font-size: 2em;
+    align-self: center;
+    justify-self: center;
+    flex-direction: column;
 }
 
 #barraHeader{
     height: 1vh;
     background-color: var(--prim-color);
-}
-
-#Logo{
-    size: 100%;
-    float: left;
-}
-
-#Empresas{
-    size: 100%;
-    float: right;
 }
 
 /* -------------NAVBAR---------------- */
@@ -50,8 +49,8 @@ header{
 
 a.enlaces{
     color: white;
-    padding: 18px;
-    margin-top: 3px;
+    padding: 1em;
+    margin: 0.15em 0.3em 0.15em 0.3em;
     background-color: var(--secon-color);
     text-decoration: none;
     text-align: center;
@@ -66,7 +65,12 @@ a.lista{
     color: rgb(209, 112, 0);
 }
 
-a.enlaces:hover{
+#Activo{
+    background-color: rgb(6, 0, 65);
+    color: rgb(255, 255, 255);
+}
+
+a.enlaces:hover, #Activo:hover{
     background-color: white;
     color: black;
     font-weight: bold;
@@ -75,6 +79,7 @@ a.enlaces:hover{
 .enlaces:visited{
     color: white;
 }
+
 
 /* -----------CONTENIDO--------------- */
 #cuerpo{
@@ -119,4 +124,52 @@ a.enlaces:hover{
 
 .empresas > p{
     padding-bottom: 3em;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+  /* Hide scrollbar for IE, Edge add Firefox */
+body{
+    -ms-overflow-style: none;
+    scrollbar-width: none; /* Firefox */
+}
+
+/* ---------------------FORMULARIO---------------- */
+
+input,textarea{
+    border-radius: 0.75em;
+    border-color: var(--secon-color);
+    -webkit-border-radius: 0.75em;
+    -moz-border-radius: 0.75em;
+    -ms-border-radius: 0.75em;
+    -o-border-radius: 0.75em;
+}
+li{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+#req{
+    color: rgb(255, 0, 0) ;
+}
+input:required:invalid{
+    background-color: rgb(250, 162, 162);
+    box-shadow: 0 0 5px #d45252;
+}
+
+input:required:valid{
+    background-color: rgb(162, 250, 174);
+    box-shadow: 0 0 5px #52d468;
+}
+button{
+    border-radius: 10px;
+    background-color: rgb(0, 162, 255);
+    width:120px;height:40px;
+    font-weight: bold; 
+}
+button:hover{
+    background-color: rgb(0, 247, 255);
+    color: black;
 }
