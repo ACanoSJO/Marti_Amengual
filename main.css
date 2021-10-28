@@ -61,6 +61,10 @@ a.enlaces{
     -ms-transition: background-color 0.25s;
     -o-transition: background-color 0.25s;
 }
+a.lista{
+    text-decoration: none;
+    color: rgb(209, 112, 0);
+}
 
 a.enlaces:hover{
     background-color: white;
@@ -97,6 +101,10 @@ a.enlaces:hover{
 
 #contenido > div{
     margin: 2em;
+}
+
+#IntroEmpresa{
+    width: 600px;
 }
 
 /* -------------TABLAS---------------- */
