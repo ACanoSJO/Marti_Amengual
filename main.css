@@ -16,7 +16,24 @@
 header{
     height: 20vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    padding-right: 7vw;
+    padding-left: 7vw;
+}
+
+#barraHeader{
+    height: 1vh;
+    background-color: var(--prim-color);
+}
+
+#Logo{
+    size: 100%;
+    float: left;
+}
+
+#Empresas{
+    size: 100%;
+    float: right;
 }
 
 /* -------------NAVBAR---------------- */
