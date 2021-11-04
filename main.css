@@ -10,8 +10,6 @@
     scroll-behavior: smooth;
 }
 
-/* -------------PORTADA--------------- */
-
 /* -------------HEADER---------------- */
 header{
     height: 20vh;
@@ -33,20 +31,30 @@ header{
 #barraHeader{
     height: 1vh;
     background-color: var(--prim-color);
+    animation-name: marti;
+    animation-duration: 3s;
 }
 
 /* -------------NAVBAR---------------- */
 #navbar{
-    width: 13vw;
-    background-color: hsl(218, 52%, 31%);
+    background-color: var(--prim-color);
     height: 100vh;
     position: sticky;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     top: 0;
+    animation-name: marti;
+    animation-duration: 3s;
+}
+@keyframes marti{
+    from {background-color: rgb(252, 134, 0);}
+    to {background-color: var(--prim-color);}
 }
 
+@keyframes marti2{
+    from {background-color: rgb(168, 90, 0);}
+    to {background-color: var(--secon-color);} 
+}
 a.enlaces{
     color: white;
     padding: 1em;
@@ -54,11 +62,14 @@ a.enlaces{
     background-color: var(--secon-color);
     text-decoration: none;
     text-align: center;
+    text-size-adjust: 10%;
     transition: background-color 0.25s;
     -webkit-transition: background-color 0.25s;
     -moz-transition: background-color 0.25s;
     -ms-transition: background-color 0.25s;
     -o-transition: background-color 0.25s;
+    animation-name: marti2;
+    animation-duration: 3s;
 }
 a.lista{
     text-decoration: none;
@@ -87,7 +98,6 @@ a.enlaces:hover, #Activo:hover{
 }
 
 #contenido{
-    width: 87vw;
     background-color: var(--third-color);
 }
 
@@ -108,10 +118,6 @@ a.enlaces:hover, #Activo:hover{
     margin: 2em;
 }
 
-#IntroEmpresa{
-    width: 600px;
-}
-
 /* -------------TABLAS---------------- */
 #tablas1{
     display: flex;
@@ -125,6 +131,7 @@ a.enlaces:hover, #Activo:hover{
 .empresas > p{
     padding-bottom: 3em;
 }
+
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 body::-webkit-scrollbar {
